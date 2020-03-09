@@ -2,7 +2,7 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import include, path
 
-from signals.apps.users.v0.views import UserMeView
+# from signals.apps.users.v0.views import UserMeView
 
 urlpatterns = [
     path('status/', include('signals.apps.health.urls')),
@@ -11,10 +11,11 @@ urlpatterns = [
     path('signals/', include('signals.apps.api.urls')),
     path('signals/admin/', admin.site.urls),
 
+    # Disbaled V0
     # DEPRECATED url route for `auth/me`. Should be fixed in the frontend before we can remove
     # this endpoint here.
-    path('signals/auth/me/', UserMeView.as_view()),
-    path('signals/user/auth/me/', UserMeView.as_view()),
+    # path('signals/auth/me/', UserMeView.as_view()),
+    # path('signals/user/auth/me/', UserMeView.as_view()),
 
     # SOAP stand-in endpoints
     path('signals/sigmax/', include('signals.apps.sigmax.urls')),
