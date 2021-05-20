@@ -1,0 +1,40 @@
+publiccodeYmlVersion: "0.2"
+name: Signalen backend
+url: "https://github.com/Signalen/backend"
+softwareVersion: "1"
+releaseDate: "2021-05-06"
+platforms:
+  - web
+categories:
+  - it-development
+usedBy:
+  - Gemeente Amsterdam
+developmentStatus: development
+softwareType: standalone/Api
+description:
+  nl:
+    localisedName: Signalen backend
+    genericName: Signalen backend
+    shortDescription: >-
+      SIA can be used by citizens and interested parties to inform the Amsterdam municipality of problems in public spaces (like noise complaints, broken street lights etc.) These signals (signalen in Dutch) are then followed up on by the appropriate municipal services.
+    longDescription: >-
+      SIA can be used by citizens and interested parties to inform the Amsterdam municipality of problems in public spaces (like noise complaints, broken street lights etc.) These signals (signalen in Dutch) are then followed up on by the appropriate municipal services.
+    documentation: "https://github.com/Signalen/backend/tree/master/docs"
+    features:
+legal:
+  license: EUPL-1.2
+  mainCopyrightOwner: Signalen
+  repoOwner: Signalen
+maintenance:
+  type: external
+  contacts:
+    - name: Jacco Brouwer
+      email: jacco.brouwer@vng.nl
+localisation:
+  localisationReady: true
+  availableLanguages:
+    - nl
+    - en
+dependsOn:
+  open:
+    - name: signalen/backend
